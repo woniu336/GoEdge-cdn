@@ -60,10 +60,10 @@ echo "已成功屏蔽官方域名通信！"
 # 下载对应架构程序包
 cd /usr/local/goedge
 if [[ "$cpu_arch" == "x86_64" ]]; then
-    wget https://static-file-global.353355.xyz/goedge/edge-admin-linux-amd64-plus-v1.3.9.zip
+    wget https://github.com/woniu336/GoEdge-cdn/releases/download/3.00/edge-admin-linux-amd64-plus-v1.3.9.zip
     echo "已下载X86架构的安装包"
 elif [[ "$cpu_arch" == "aarch64" ]]; then
-    wget https://static-file-global.353355.xyz/goedge/edge-admin-linux-arm64-plus-v1.3.9.zip
+    wget https://github.com/woniu336/GoEdge-cdn/releases/download/3.00/edge-admin-linux-arm64-plus-v1.3.9.zip
     echo "已下载ARM架构的安装包"
 else
     echo "不支持的CPU架构"
@@ -87,8 +87,8 @@ cd edge-api/deploy
 rm -rf *.zip
 
 # 拉取纯净plus版本程序包
-wget -O edge-node-linux-amd64-v1.3.9.zip https://static-file-global.353355.xyz/goedge/edge-node-linux-amd64-plus-v1.3.9.zip
-wget -O edge-node-linux-arm64-v1.3.9.zip https://static-file-global.353355.xyz/goedge/edge-node-linux-arm64-plus-v1.3.9.zip
+wget -O edge-node-linux-amd64-v1.3.9.zip https://github.com/woniu336/GoEdge-cdn/releases/download/3.00/edge-node-linux-amd64-plus-v1.3.9.zip
+wget -O edge-node-linux-arm64-v1.3.9.zip https://github.com/woniu336/GoEdge-cdn/releases/download/3.00/edge-node-linux-arm64-plus-v1.3.9.zip
 
 # 流程执行完毕，输出管理平台地址及通用注册码
 clear
